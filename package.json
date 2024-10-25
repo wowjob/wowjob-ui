@@ -10,6 +10,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist",
+    "dist/theme",
+    "dist/breakpoint",
+    "src/**/*.ts"
+  ],
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
