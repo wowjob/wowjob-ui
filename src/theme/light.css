@@ -1,0 +1,11 @@
+@property --c {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
+
+@property --bgc {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: lightblue;
+}
