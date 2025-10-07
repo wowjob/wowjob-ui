@@ -1,3 +1,10 @@
+## [0.0.3](https://github.com/wowjob/wowjob-ui/compare/v0.0.2...v0.0.3) (2025-10-07)
+
+
+### Bug Fixes
+
+* is it working? ([926b563](https://github.com/wowjob/wowjob-ui/commit/926b56345b36d79c81fed28bc6423eda9f98c5e5))
+
 ## [0.0.2](https://github.com/wowjob/wowjob-ui/compare/v0.0.1...v0.0.2) (2025-10-07)
 
 
