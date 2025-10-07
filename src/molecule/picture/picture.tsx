@@ -1,4 +1,4 @@
-import { Flex, Image } from '@wowjob/ui'
+import { Flex, Image } from '../../atom'
 
 import type { TImageConfig } from '@wowjob/type'
 import type { TPicture } from './type'

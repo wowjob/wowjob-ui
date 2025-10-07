@@ -1,4 +1,4 @@
-import { Picture } from '@wowjob/ui'
+import { Picture } from '../picture'
 import type { TFigure } from './type'
 
 export const Figure = ({

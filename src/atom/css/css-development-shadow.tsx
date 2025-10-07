@@ -20,7 +20,7 @@ export const CSSDevelopmentShadow: FC = () => {
         const loadedCss: TCssString = await loadCss() // Await inline load
         setCssText(loadedCss) // Update state (granular)
 
-        if (import.meta.env.DEV) {
+        if (import.meta.env.MODE === 'development') {
           // Dev-only log
           // console.log('CSSDevelopmentShadow: Loaded, length:', loadedCss.length) // Debug entity
         }

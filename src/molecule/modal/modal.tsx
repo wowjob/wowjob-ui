@@ -4,7 +4,7 @@ import './modal.css'
 
 import { useEffect, useRef } from 'react'
 
-import { Flex } from '@wowjob/ui'
+import { Flex } from '../../atom'
 import type { TModal } from './modal.type'
 
 export const Modal = ({

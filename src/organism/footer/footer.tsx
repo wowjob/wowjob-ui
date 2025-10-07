@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Flex, Link, Text } from '@wowjob/ui'
+import { Flex, Link, Text } from '../../atom'
 import type { TStyle } from '@wowjob/css'
 import { copyrightJSON, type TCopyrightJSON } from '@wowjob/type'
 

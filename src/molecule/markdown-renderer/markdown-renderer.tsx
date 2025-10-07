@@ -1,4 +1,4 @@
-import { Flex, Link, Text } from '@wowjob/ui'
+import { Flex, Link, Text } from '../../atom'
 import { Fragment, createElement } from 'react'
 import { jsx, jsxs } from 'react/jsx-runtime'
 

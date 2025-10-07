@@ -1,6 +1,5 @@
 import { Image, Link, Text } from '../../atom'
 
-import { TPublicProfile } from '@wowjob/db'
 import { avatarFilter } from '@wowjob/type'
 import { getProfileFullName } from '@wowjob/util'
 
@@ -15,7 +14,14 @@ export const AvatarBlock = ({
   width = 32,
   height = 32,
 }: {
-  author: TPublicProfile['db']['base_client__public_profile']['select']
+  author: {
+    first_name: string | null | undefined
+    middle_name: string | null | undefined
+    last_name: string | null | undefined
+    nickname: string | null | undefined
+
+    thumbnail: TAvatarImage
+  }
   pic: string
   domain: string
   slug?: string
@@ -24,11 +30,11 @@ export const AvatarBlock = ({
   height?: number
 }) => {
   const { thumbnail } = author
-  const avatar = (thumbnail as TAvatarImage)['avatar-sm']
+  const avatar = thumbnail['avatar-sm']
 
   return (
     <Link
-      href={`/profile/${author.username}`}
+      href={`/profile/${author.nickname}`}
       mobile={{
         display: 'flex',
         flexDirection: 'row',
