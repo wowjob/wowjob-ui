@@ -1,0 +1,11 @@
+/* wowjob-ui-textarea */
+.wowjob-ui-textarea {
+  resize: vertical;
+  max-width: 100%;
+  width: 100%;
+  border-width: 0.125rem; 
+  border-style: solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  min-height: 5rem;
+}

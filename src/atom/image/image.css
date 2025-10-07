@@ -1,0 +1,8 @@
+.wowjob-ui-image {
+  object-fit: cover;
+  object-position: center;
+
+  width: 100%;
+  height: auto;
+  transition: 250ms;
+}

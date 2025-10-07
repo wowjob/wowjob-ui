@@ -1,0 +1,12 @@
+.wowjob-ui-link-block {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: underline;
+  transition: 250ms;
+}
+
+.wowjob-ui-link-block:hover {
+  color: red
+}

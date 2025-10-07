@@ -1,0 +1,68 @@
+{
+  "name": "@wowjob/ui",
+  "version": "0.0.1",
+  "description": "A collection of reusable React components for the WowJob.ai ecosystem, built for React 19.",
+  "author": "Marian Zburlea (https://github.com/marianzburlea)",
+  "license": "MIT",
+  "homepage": "https://github.com/wowjob/wowjob-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowjob/wowjob-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wowjob/wowjob-ui/issues"
+  },
+  "keywords": [
+    "wowjob",
+    "ui",
+    "react",
+    "react-components",
+    "design-system",
+    "ui-kit",
+    "react19"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "lint": "eslint .",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@tanstack/react-form": "^1.12.1",
+    "@wowjob/css": "latest",
+    "rehype-react": "^8.0.0",
+    "rehype-sanitize": "^6.0.0"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "eslint": "^9.25.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "semantic-release": "^24.2.9",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  }
+}

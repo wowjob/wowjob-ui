@@ -1,0 +1,95 @@
+.zoom-tool-input[data-zoom='1']:checked ~ div {
+  zoom: 1;
+}
+
+#wowjob-ui
+  .zoom-tool-input[data-zoom='1']:checked
+  ~ div
+  label[for='zoom-tool-1.5'] {
+  display: flex;
+}
+
+/* 1.5 */
+#wowjob-ui
+  .zoom-tool-input[data-zoom='1.5']:checked
+  ~ div
+  label[for='zoom-tool-2'] {
+  display: flex;
+}
+
+/* 2 */
+#wowjob-ui
+  .zoom-tool-input[data-zoom='2']:checked
+  ~ div
+  label[for='zoom-tool-2.5'] {
+  display: flex;
+}
+
+/* 2.5 */
+#wowjob-ui
+  .zoom-tool-input[data-zoom='2.5']:checked
+  ~ div
+  label[for='zoom-tool-3'] {
+  display: flex;
+}
+
+/* 3 */
+#wowjob-ui
+  .zoom-tool-input[data-zoom='3']:checked
+  ~ div
+  label[for='zoom-tool-1'] {
+  display: flex;
+}
+
+.zoom-tool-label {
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+.zoom-tool-label::before {
+  content: '👁️';
+}
+
+.zoom-tool-label {
+  display: none;
+}
+
+.zoom-tool-input {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.01;
+}
+
+.zoom-tool-input[data-zoom='1.5']:checked ~ div {
+  zoom: 1.5;
+}
+.zoom-tool-input[data-zoom='2']:checked ~ div {
+  zoom: 2;
+}
+.zoom-tool-input[data-zoom='2.5']:checked ~ div {
+  zoom: 2.5;
+}
+.zoom-tool-input[data-zoom='3']:checked ~ div {
+  zoom: 3;
+}
+
+@media screen and (min-width: 48rem) {
+  #wowjob-ui label[for='zoom-tool-3'] {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  #wowjob-ui .zoom-tool-input:checked ~ div {
+    zoom: 1;
+  }
+}

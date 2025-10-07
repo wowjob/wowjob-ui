@@ -1,0 +1,71 @@
+/* wowjob-ui-button-group */
+.wowjob-ui-button-group {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  flex-direction: row;
+  gap: 0;
+}
+
+.wowjob-ui-button-group > a,
+.wowjob-ui-button-group > button,
+.wowjob-ui-button-group > form button {
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.wowjob-ui-button-group > a:not(:first-child):not(:last-child),
+.wowjob-ui-button-group > form:not(:first-child):not(:last-child) button {
+  border-radius: 0;
+}
+
+html[dir="ltr"] .wowjob-ui-button-group:not(.flex-direction) > a:first-child,
+html[dir="ltr"] .wowjob-ui-button-group:not(.flex-direction) > form:first-child button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
+html[dir="rtl"] .wowjob-ui-button-group:not(.flex-direction) > a:first-child,
+html[dir="rtl"] .wowjob-ui-button-group:not(.flex-direction) > form:first-child button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+html[dir="ltr"] .wowjob-ui-button-group:not(.flex-direction) > a:last-child,
+html[dir="ltr"] .wowjob-ui-button-group:not(.flex-direction) > form:last-child button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+html[dir="rtl"] .wowjob-ui-button-group:not(.flex-direction) > a:last-child,
+html[dir="rtl"] .wowjob-ui-button-group:not(.flex-direction) > form:last-child button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+html[dir="ltr"] .wowjob-ui-button-group.flex-direction > a:first-child,
+html[dir="ltr"] .wowjob-ui-button-group.flex-direction > form:first-child button {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+html[dir="rtl"] .wowjob-ui-button-group.flex-direction > a:first-child,
+html[dir="rtl"] .wowjob-ui-button-group.flex-direction > form:first-child button {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+html[dir="ltr"] .wowjob-ui-button-group.flex-direction > a:last-child ,
+html[dir="ltr"] .wowjob-ui-button-group.flex-direction > form:last-child button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+html[dir="rtl"] .wowjob-ui-button-group.flex-direction > a:last-child ,
+html[dir="rtl"] .wowjob-ui-button-group.flex-direction > form:last-child button {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}

@@ -1,0 +1,52 @@
+.wowjob-ui-multi-currency-price {
+  display: none;
+}
+
+.wowjob-ui-multi-currency-price-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.wowjob-ui-multi-currency-price-input:checked
+  + .wowjob-ui-multi-currency-price {
+  display: flex;
+}
+
+.wowjob-ui-currency-wrapper {
+  --selected-tch: 100;
+}
+
+#wowjob-ui
+  .wowjob-ui-multi-currency-price-input[data-currency='gbp']:checked
+  ~ .wowjob-ui-currency-wrapper
+  > label[data-currency='gbp'] {
+  --tch: var(--selected-tch);
+}
+
+#wowjob-ui
+  .wowjob-ui-multi-currency-price-input[data-currency='eur']:checked
+  ~ .wowjob-ui-currency-wrapper
+  > label[data-currency='eur'] {
+  --tch: var(--selected-tch);
+}
+
+#wowjob-ui
+  .wowjob-ui-multi-currency-price-input[data-currency='usd']:checked
+  ~ .wowjob-ui-currency-wrapper
+  > label[data-currency='usd'] {
+  --tch: var(--selected-tch);
+}
+
+#wowjob-ui
+  .wowjob-ui-multi-currency-price-input[data-currency='aed']:checked
+  ~ .wowjob-ui-currency-wrapper
+  > label[data-currency='aed'] {
+  --tch: var(--selected-tch);
+}
+
+#wowjob-ui
+  .wowjob-ui-multi-currency-price-input[data-currency='ron']:checked
+  ~ .wowjob-ui-currency-wrapper
+  > label[data-currency='ron'] {
+  --tch: var(--selected-tch);
+}

@@ -1,0 +1,8 @@
+/* wowjob-ui-text */
+.wowjob-ui-text {
+  color: inherit;
+}
+
+#wowjob-ui em.wowjob-ui-text {
+  display: contents;
+}
