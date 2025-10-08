@@ -1,3 +1,10 @@
+## [0.0.8](https://github.com/wowjob/wowjob-ui/compare/v0.0.7...v0.0.8) (2025-10-08)
+
+
+### Bug Fixes
+
+* add markdown components ([8cd7d9d](https://github.com/wowjob/wowjob-ui/commit/8cd7d9d125f8d2fe66397603170e15670dab5c2c))
+
 ## [0.0.7](https://github.com/wowjob/wowjob-ui/compare/v0.0.6...v0.0.7) (2025-10-08)
 
 
