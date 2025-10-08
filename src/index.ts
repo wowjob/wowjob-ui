@@ -19,11 +19,9 @@ export {
 export {
   AvatarBlock,
   ButtonGroup,
-  CTA,
   Figure,
   InputField,
   Modal,
-  MultiCurrencyPrice,
   PasswordField,
   Picture,
   ProgressBar,
