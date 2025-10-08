@@ -1,5 +1,52 @@
-// tsup.config.ts
+// /path/to/your/libs/wowjob-ui/tsup.config.ts
 import { defineConfig } from 'tsup'
+
+// A list of all Node.js built-in modules.
+// We are telling tsup to NOT bundle any of these.
+const nodeBuiltIns = [
+  'assert',
+  'async_hooks',
+  'buffer',
+  'child_process',
+  'cluster',
+  'console',
+  'constants',
+  'crypto',
+  'dgram',
+  'diagnostics_channel',
+  'dns',
+  'domain',
+  'events',
+  'fs',
+  'http',
+  'http2',
+  'https',
+  'inspector',
+  'module',
+  'net',
+  'os',
+  'path',
+  'perf_hooks',
+  'process',
+  'punycode',
+  'querystring',
+  'readline',
+  'repl',
+  'stream',
+  'string_decoder',
+  'sys',
+  'timers',
+  'tls',
+  'trace_events',
+  'tty',
+  'url',
+  'util',
+  'v8',
+  'vm',
+  'wasi',
+  'worker_threads',
+  'zlib',
+]
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -8,16 +55,5 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  // ✅ Add this external array
-  external: [
-    'react',
-    'react-dom',
-    // 👇 ADD THE NODE.JS BUILT-IN MODULES HERE
-    'url', // Specifically for fileURLToPath
-    'path', // For path-related warnings
-    'fs', // For filesystem-related warnings
-    'process', // For process-related warnings
-    'events', // For EventEmitter-related warnings
-    'util',
-  ],
+  external: ['react', 'react-dom', ...nodeBuiltIns],
 })
