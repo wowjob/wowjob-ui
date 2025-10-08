@@ -256,7 +256,7 @@
 
     "@ungap/structured-clone": ["@ungap/structured-clone@1.3.0", "", {}, "sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g=="],
 
-    "@wowjob/css": ["@wowjob/css@0.1.1", "", {}, "sha512-/SxPXy4IRZgj254bX7uKXGErbohgn3U1tNJJ0PJkRRTKm1qBBJ7sZNyg1oWPcLqVBLQhv1uRyKxQ76j5vALyoA=="],
+    "@wowjob/css": ["@wowjob/css@0.3.3", "", {}, "sha512-c76fJS7bhP/V9IyXgyvx5r9pqnBOwu3gf9XWXse2iozn9Eni/yIKnmUqG4v+Qf1BbzpZaJ7GzNY1k2G1ZQF6Rg=="],
 
     "@wowjob/type": ["@wowjob/type@0.0.2", "", { "dependencies": { "@wowjob/css": "latest" } }, "sha512-+gp1ZkryCckpUhbEFd+8nCJIlg8RRm4NEsO+v0fz3yOborHtvsKspXEcHI8BSoNw7TLiviglwwfW9TidF/Nt1Q=="],
 
@@ -1059,8 +1059,6 @@
     "crypto-random-string/type-fest": ["type-fest@1.4.0", "", {}, "sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA=="],
 
     "env-ci/execa": ["execa@8.0.1", "", { "dependencies": { "cross-spawn": "^7.0.3", "get-stream": "^8.0.1", "human-signals": "^5.0.0", "is-stream": "^3.0.0", "merge-stream": "^2.0.0", "npm-run-path": "^5.1.0", "onetime": "^6.0.0", "signal-exit": "^4.1.0", "strip-final-newline": "^3.0.0" } }, "sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg=="],
-
-    "fdir/picomatch": ["picomatch@4.0.3", "", {}, "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q=="],
 
     "foreground-child/signal-exit": ["signal-exit@4.1.0", "", {}, "sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw=="],
 

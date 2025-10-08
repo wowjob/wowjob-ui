@@ -12,13 +12,12 @@ export default defineConfig({
   external: [
     'react',
     'react-dom',
-    // '@wowjob/css',
-    // '@wowjob/type',
-    // '@tanstack/react-form',
-    // 'rehype-react',
-    // 'rehype-sanitize',
-    // // 'remark-rehype',
-    // 'remark-parse',
-    // 'remark-gfm',
+    // 👇 ADD THE NODE.JS BUILT-IN MODULES HERE
+    'url', // Specifically for fileURLToPath
+    'path', // For path-related warnings
+    'fs', // For filesystem-related warnings
+    'process', // For process-related warnings
+    'events', // For EventEmitter-related warnings
+    'util',
   ],
 })
