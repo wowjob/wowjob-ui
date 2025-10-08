@@ -35,3 +35,5 @@ export { CookieBanner, Footer, TopMenu } from './organism'
 export type { TButton, TInput, TTextarea } from './atom'
 
 export { getEnv } from './util'
+
+export { CTA, MarkdownRenderer, MultiCurrencyPrice } from './markdown'
