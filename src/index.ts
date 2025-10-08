@@ -22,7 +22,6 @@ export {
   CTA,
   Figure,
   InputField,
-  MarkdownRenderer,
   Modal,
   MultiCurrencyPrice,
   PasswordField,

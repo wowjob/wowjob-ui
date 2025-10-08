@@ -35,6 +35,10 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./markdown": {
+      "import": "./dist/markdown.js",
+      "types": "./dist/markdown.d.ts"
     }
   },
   "scripts": {
@@ -47,7 +51,7 @@
     "@tanstack/react-form": "^1.12.1",
     "@wowjob/css": "latest",
     "@wowjob/type": "latest",
-    "@wowjob/util": "latest",
+    "@wowjob/util": "^0.0.3",
     "rehype-react": "^8.0.0",
     "rehype-sanitize": "^6.0.0",
     "remark-gfm": "^4.0.1",

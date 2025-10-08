@@ -49,7 +49,10 @@ const nodeBuiltIns = [
 ]
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: {
+    index: 'src/index.ts', // Main entry for safe components
+    markdown: 'src/markdown.ts', // Entry for markdown-related components
+  },
   format: ['esm'],
   dts: true,
   splitting: false,
