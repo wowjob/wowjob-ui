@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/wowjob/wowjob-ui/compare/v0.0.5...v0.0.6) (2025-10-08)
+
+
+### Bug Fixes
+
+* update wowjob/util and separate markdown export ([b930bf5](https://github.com/wowjob/wowjob-ui/commit/b930bf55a79a091324ecc18a8bcdff42ef271e5d))
+
 ## [0.0.5](https://github.com/wowjob/wowjob-ui/compare/v0.0.4...v0.0.5) (2025-10-08)
 
 
