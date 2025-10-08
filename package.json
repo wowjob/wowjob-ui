@@ -26,26 +26,23 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "files": [
-    "dist"
+    "src"
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
     },
     "./markdown": {
-      "import": "./dist/markdown.js",
-      "types": "./dist/markdown.d.ts"
+      "import": "./src/markdown.ts",
+      "types": "./src/markdown.ts"
     }
   },
   "scripts": {
-    "clean": "rm -rf dist",
-    "lint": "eslint .",
-    "build": "tsup",
-    "dev": "tsup --watch"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@tanstack/react-form": "^1.12.1",
@@ -72,7 +69,6 @@
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "semantic-release": "^24.2.9",
-    "tsup": "^8.5.0",
     "typescript": "^5.8.2"
   }
 }
