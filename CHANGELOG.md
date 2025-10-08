@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/wowjob/wowjob-ui/compare/v0.0.4...v0.0.5) (2025-10-08)
+
+
+### Bug Fixes
+
+* more node functions to not break client ui ([a84599c](https://github.com/wowjob/wowjob-ui/commit/a84599c064375ba7cdd2a13f0aa49010d3db83ce))
+
 ## [0.0.4](https://github.com/wowjob/wowjob-ui/compare/v0.0.3...v0.0.4) (2025-10-08)
 
 

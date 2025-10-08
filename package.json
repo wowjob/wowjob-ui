@@ -1,6 +1,6 @@
 {
   "name": "@wowjob/ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of reusable React components for the WowJob.ai ecosystem, built for React 19.",
   "author": "Marian Zburlea (https://github.com/marianzburlea)",
   "license": "MIT",
