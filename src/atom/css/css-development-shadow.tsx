@@ -6,7 +6,8 @@ type TCssString = string // Granular: Strict string for embedded CSS
 // Inline load helper: Vite ?inline yields string (singular entity for all.css; composable async)
 const loadCss = async (): Promise<TCssString> => {
   // @ts-ignore – Vite inline import is valid at runtime
-  const module = await import('@wowjob/css/all.css?inline') // Vite inline query: Direct string export
+  // const module = await import('@wowjob/css/all.css?inline') // Vite inline query: Direct string export
+  const module = await import('@wowjob/css/all.css')
   return module.default // Singular entity from module
 }
 

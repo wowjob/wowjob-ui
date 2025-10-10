@@ -4,6 +4,21 @@ import { avatarFilter } from '@wowjob/type'
 import { getProfileFullName } from '@wowjob/util'
 
 type TAvatarImage = typeof avatarFilter.media
+type TAuthor = {
+  id: number
+  local_id: string
+  created_at: Date
+  updated_at: Date
+  updated_at_time: number
+  thumbnail: unknown
+  nickname: string
+  username: string
+  job_title: string | null
+  first_name: string | null
+  last_name: string | null
+  middle_name: string | null
+  bio: string | null
+}
 
 export const AvatarBlock = ({
   author,
@@ -14,14 +29,7 @@ export const AvatarBlock = ({
   width = 32,
   height = 32,
 }: {
-  author: {
-    first_name: string | null | undefined
-    middle_name: string | null | undefined
-    last_name: string | null | undefined
-    nickname: string | null | undefined
-
-    thumbnail: TAvatarImage
-  }
+  author: TAuthor
   pic: string
   domain: string
   slug?: string
@@ -29,12 +37,14 @@ export const AvatarBlock = ({
   width?: number
   height?: number
 }) => {
-  const { thumbnail } = author
-  const avatar = thumbnail['avatar-sm']
+  const { thumbnail } = author as TAuthor & {
+    thumbnail?: TAvatarImage
+  }
+  const avatar = thumbnail?.['avatar-sm']
 
   return (
     <Link
-      href={`/profile/${author.nickname}`}
+      href={`/profile/${author.username}`}
       mobile={{
         display: 'flex',
         flexDirection: 'row',
@@ -55,7 +65,7 @@ export const AvatarBlock = ({
       </Text>
 
       <Image
-        src={`//${pic}.${domain}/${avatar.url}`}
+        src={`//${pic}.${domain}/${avatar?.url}`}
         alt={getProfileFullName(author)}
         width={width}
         height={height}
