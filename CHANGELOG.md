@@ -1,3 +1,10 @@
+## [0.0.9](https://github.com/wowjob/wowjob-ui/compare/v0.0.8...v0.0.9) (2025-10-10)
+
+
+### Bug Fixes
+
+* inline dosn't play nice with nextjs ([a4c42b4](https://github.com/wowjob/wowjob-ui/commit/a4c42b4db21ad70f67f3b5236f2e9c839bb2fe66))
+
 ## [0.0.8](https://github.com/wowjob/wowjob-ui/compare/v0.0.7...v0.0.8) (2025-10-08)
 
 
